@@ -1,0 +1,35 @@
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+
+	int main ()
+{
+	int coupon;
+	int candy;
+	int gum;
+	int rem;
+	int rem2;
+
+	cout << "Enter amount of coupons won: ";
+	cin >> coupon;
+	candy = (coupon / 10);
+	while (coupon >=  10 ) 	
+{	 cout << "this many " << candy << " candy bars you can has" << endl;
+	coupon = (coupon - 10);
+	break;
+ }
+	rem = (coupon % 10);
+	gum = (rem / 3); 
+	while (coupon >= 3)
+{	cout << "this many " << gum << " gumballs you can has" << endl;
+	break;
+}	
+	rem2 = (coupon % 3);
+	cout << "coupons remaining: " << rem2 << endl;
+ 
+
+return 0;
+}
+
+

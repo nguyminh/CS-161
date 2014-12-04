@@ -1,0 +1,22 @@
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+
+	int main()
+{
+	int coupon;
+	int gum;
+	int candy;
+	int rem;
+	
+	cout <<"enter amount of coupon won: ";
+	cin >> coupon;
+	candy = (coupon / 10);
+	rem = (coupon % 10);
+	gum = (rem / 3);
+	cout <<"you can get " << candy << " candy bars and " << gum << " gumballs " << endl;
+ 
+return 0;
+}
+	

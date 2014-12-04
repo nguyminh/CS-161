@@ -1,0 +1,20 @@
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+
+int  main ()
+{
+       double coz;
+	double tons;
+	double boxes; 
+	cout << " Enter weight of cereal box in ounces here: ";
+        cin >> coz;
+        tons = (coz / 35273.92);
+	cout << "The weight of the cereal box in tons is: " << tons << endl;
+	boxes = (((1 - tons)*(35273.92)) / coz );
+  	cout << "additionally, you will need " << boxes << "boxes of" << endl;
+	cout << "cereal to yield 1 metric ton of cereal" << endl;   
+return 0;
+}
+

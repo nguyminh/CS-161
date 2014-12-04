@@ -1,0 +1,25 @@
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+
+    int main ()
+{
+ 	int maxmen;
+	int maxroom;
+	int more;
+	int less; 	
+	cout << "enter maximum room capacity ";
+	cout << "followed by number of people attending meeting: ";
+	cin >> maxroom >> maxmen;
+	more = (maxroom - maxmen);
+	less = (maxmen - maxroom);
+	if (maxmen <= maxroom)
+	cout << "meeting is allowed and " << more << " more can join" << endl;
+	else
+	cout << "meeting not allowed and " << less << " must leave to start" << endl;
+	
+
+return 0;
+}
+ 
